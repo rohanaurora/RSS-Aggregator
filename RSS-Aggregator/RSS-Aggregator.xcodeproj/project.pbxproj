@@ -7,47 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD5FDEDE1A736A7C00EE6BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5FDEDD1A736A7C00EE6BF3 /* main.m */; };
-		BD5FDEE11A736A7C00EE6BF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5FDEE01A736A7C00EE6BF3 /* AppDelegate.m */; };
-		BD5FDEE71A736A7C00EE6BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5FDEE51A736A7C00EE6BF3 /* Main.storyboard */; };
-		BD5FDEE91A736A7C00EE6BF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5FDEE81A736A7C00EE6BF3 /* Images.xcassets */; };
-		BD5FDEEC1A736A7C00EE6BF3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5FDEEA1A736A7C00EE6BF3 /* LaunchScreen.xib */; };
-		BD5FDEF81A736A7C00EE6BF3 /* RSS_AggregatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5FDEF71A736A7C00EE6BF3 /* RSS_AggregatorTests.m */; };
+		BDC8E4431A759A9E0013C2BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E4421A759A9E0013C2BE /* main.m */; };
+		BDC8E4461A759A9E0013C2BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E4451A759A9E0013C2BE /* AppDelegate.m */; };
+		BDC8E4491A759A9E0013C2BE /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E4481A759A9E0013C2BE /* MasterViewController.m */; };
+		BDC8E44C1A759A9E0013C2BE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E44B1A759A9E0013C2BE /* DetailViewController.m */; };
+		BDC8E44F1A759A9E0013C2BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC8E44D1A759A9E0013C2BE /* Main.storyboard */; };
+		BDC8E4511A759A9E0013C2BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDC8E4501A759A9E0013C2BE /* Images.xcassets */; };
+		BDC8E4541A759A9E0013C2BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC8E4521A759A9E0013C2BE /* LaunchScreen.xib */; };
+		BDC8E4601A759A9E0013C2BE /* RSS_AggregatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E45F1A759A9E0013C2BE /* RSS_AggregatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BD5FDEF21A736A7C00EE6BF3 /* PBXContainerItemProxy */ = {
+		BDC8E45A1A759A9E0013C2BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BD5FDED01A736A7C00EE6BF3 /* Project object */;
+			containerPortal = BDC8E4351A759A9E0013C2BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BD5FDED71A736A7C00EE6BF3;
+			remoteGlobalIDString = BDC8E43C1A759A9E0013C2BE;
 			remoteInfo = "RSS-Aggregator";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BD5FDED81A736A7C00EE6BF3 /* RSS-Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS-Aggregator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD5FDEDC1A736A7C00EE6BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD5FDEDD1A736A7C00EE6BF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BD5FDEDF1A736A7C00EE6BF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BD5FDEE01A736A7C00EE6BF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BD5FDEE61A736A7C00EE6BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BD5FDEE81A736A7C00EE6BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BD5FDEEB1A736A7C00EE6BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BD5FDEF11A736A7C00EE6BF3 /* RSS-AggregatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSS-AggregatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD5FDEF61A736A7C00EE6BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD5FDEF71A736A7C00EE6BF3 /* RSS_AggregatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_AggregatorTests.m; sourceTree = "<group>"; };
+		BDC8E43D1A759A9E0013C2BE /* RSS-Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS-Aggregator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC8E4411A759A9E0013C2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC8E4421A759A9E0013C2BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDC8E4441A759A9E0013C2BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDC8E4451A759A9E0013C2BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDC8E4471A759A9E0013C2BE /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BDC8E4481A759A9E0013C2BE /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		BDC8E44A1A759A9E0013C2BE /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BDC8E44B1A759A9E0013C2BE /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BDC8E44E1A759A9E0013C2BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDC8E4501A759A9E0013C2BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BDC8E4531A759A9E0013C2BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BDC8E4591A759A9E0013C2BE /* RSS-AggregatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSS-AggregatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC8E45E1A759A9E0013C2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC8E45F1A759A9E0013C2BE /* RSS_AggregatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_AggregatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BD5FDED51A736A7C00EE6BF3 /* Frameworks */ = {
+		BDC8E43A1A759A9E0013C2BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD5FDEEE1A736A7C00EE6BF3 /* Frameworks */ = {
+		BDC8E4561A759A9E0013C2BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,59 +63,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BD5FDECF1A736A7C00EE6BF3 = {
+		BDC8E4341A759A9E0013C2BE = {
 			isa = PBXGroup;
 			children = (
-				BD5FDEDA1A736A7C00EE6BF3 /* RSS-Aggregator */,
-				BD5FDEF41A736A7C00EE6BF3 /* RSS-AggregatorTests */,
-				BD5FDED91A736A7C00EE6BF3 /* Products */,
+				BDC8E43F1A759A9E0013C2BE /* RSS-Aggregator */,
+				BDC8E45C1A759A9E0013C2BE /* RSS-AggregatorTests */,
+				BDC8E43E1A759A9E0013C2BE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BD5FDED91A736A7C00EE6BF3 /* Products */ = {
+		BDC8E43E1A759A9E0013C2BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD5FDED81A736A7C00EE6BF3 /* RSS-Aggregator.app */,
-				BD5FDEF11A736A7C00EE6BF3 /* RSS-AggregatorTests.xctest */,
+				BDC8E43D1A759A9E0013C2BE /* RSS-Aggregator.app */,
+				BDC8E4591A759A9E0013C2BE /* RSS-AggregatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD5FDEDA1A736A7C00EE6BF3 /* RSS-Aggregator */ = {
+		BDC8E43F1A759A9E0013C2BE /* RSS-Aggregator */ = {
 			isa = PBXGroup;
 			children = (
-				BD5FDEDF1A736A7C00EE6BF3 /* AppDelegate.h */,
-				BD5FDEE01A736A7C00EE6BF3 /* AppDelegate.m */,
-				BD5FDEE51A736A7C00EE6BF3 /* Main.storyboard */,
-				BD5FDEE81A736A7C00EE6BF3 /* Images.xcassets */,
-				BD5FDEEA1A736A7C00EE6BF3 /* LaunchScreen.xib */,
-				BD5FDEDB1A736A7C00EE6BF3 /* Supporting Files */,
+				BDC8E4441A759A9E0013C2BE /* AppDelegate.h */,
+				BDC8E4451A759A9E0013C2BE /* AppDelegate.m */,
+				BDC8E4471A759A9E0013C2BE /* MasterViewController.h */,
+				BDC8E4481A759A9E0013C2BE /* MasterViewController.m */,
+				BDC8E44A1A759A9E0013C2BE /* DetailViewController.h */,
+				BDC8E44B1A759A9E0013C2BE /* DetailViewController.m */,
+				BDC8E44D1A759A9E0013C2BE /* Main.storyboard */,
+				BDC8E4501A759A9E0013C2BE /* Images.xcassets */,
+				BDC8E4521A759A9E0013C2BE /* LaunchScreen.xib */,
+				BDC8E4401A759A9E0013C2BE /* Supporting Files */,
 			);
 			path = "RSS-Aggregator";
 			sourceTree = "<group>";
 		};
-		BD5FDEDB1A736A7C00EE6BF3 /* Supporting Files */ = {
+		BDC8E4401A759A9E0013C2BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD5FDEDC1A736A7C00EE6BF3 /* Info.plist */,
-				BD5FDEDD1A736A7C00EE6BF3 /* main.m */,
+				BDC8E4411A759A9E0013C2BE /* Info.plist */,
+				BDC8E4421A759A9E0013C2BE /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BD5FDEF41A736A7C00EE6BF3 /* RSS-AggregatorTests */ = {
+		BDC8E45C1A759A9E0013C2BE /* RSS-AggregatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				BD5FDEF71A736A7C00EE6BF3 /* RSS_AggregatorTests.m */,
-				BD5FDEF51A736A7C00EE6BF3 /* Supporting Files */,
+				BDC8E45F1A759A9E0013C2BE /* RSS_AggregatorTests.m */,
+				BDC8E45D1A759A9E0013C2BE /* Supporting Files */,
 			);
 			path = "RSS-AggregatorTests";
 			sourceTree = "<group>";
 		};
-		BD5FDEF51A736A7C00EE6BF3 /* Supporting Files */ = {
+		BDC8E45D1A759A9E0013C2BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD5FDEF61A736A7C00EE6BF3 /* Info.plist */,
+				BDC8E45E1A759A9E0013C2BE /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,13 +127,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD5FDED71A736A7C00EE6BF3 /* RSS-Aggregator */ = {
+		BDC8E43C1A759A9E0013C2BE /* RSS-Aggregator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD5FDEFB1A736A7C00EE6BF3 /* Build configuration list for PBXNativeTarget "RSS-Aggregator" */;
+			buildConfigurationList = BDC8E4631A759A9E0013C2BE /* Build configuration list for PBXNativeTarget "RSS-Aggregator" */;
 			buildPhases = (
-				BD5FDED41A736A7C00EE6BF3 /* Sources */,
-				BD5FDED51A736A7C00EE6BF3 /* Frameworks */,
-				BD5FDED61A736A7C00EE6BF3 /* Resources */,
+				BDC8E4391A759A9E0013C2BE /* Sources */,
+				BDC8E43A1A759A9E0013C2BE /* Frameworks */,
+				BDC8E43B1A759A9E0013C2BE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -131,46 +141,46 @@
 			);
 			name = "RSS-Aggregator";
 			productName = "RSS-Aggregator";
-			productReference = BD5FDED81A736A7C00EE6BF3 /* RSS-Aggregator.app */;
+			productReference = BDC8E43D1A759A9E0013C2BE /* RSS-Aggregator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BD5FDEF01A736A7C00EE6BF3 /* RSS-AggregatorTests */ = {
+		BDC8E4581A759A9E0013C2BE /* RSS-AggregatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD5FDEFE1A736A7C00EE6BF3 /* Build configuration list for PBXNativeTarget "RSS-AggregatorTests" */;
+			buildConfigurationList = BDC8E4661A759A9E0013C2BE /* Build configuration list for PBXNativeTarget "RSS-AggregatorTests" */;
 			buildPhases = (
-				BD5FDEED1A736A7C00EE6BF3 /* Sources */,
-				BD5FDEEE1A736A7C00EE6BF3 /* Frameworks */,
-				BD5FDEEF1A736A7C00EE6BF3 /* Resources */,
+				BDC8E4551A759A9E0013C2BE /* Sources */,
+				BDC8E4561A759A9E0013C2BE /* Frameworks */,
+				BDC8E4571A759A9E0013C2BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD5FDEF31A736A7C00EE6BF3 /* PBXTargetDependency */,
+				BDC8E45B1A759A9E0013C2BE /* PBXTargetDependency */,
 			);
 			name = "RSS-AggregatorTests";
 			productName = "RSS-AggregatorTests";
-			productReference = BD5FDEF11A736A7C00EE6BF3 /* RSS-AggregatorTests.xctest */;
+			productReference = BDC8E4591A759A9E0013C2BE /* RSS-AggregatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BD5FDED01A736A7C00EE6BF3 /* Project object */ = {
+		BDC8E4351A759A9E0013C2BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Rohan Aurora";
 				TargetAttributes = {
-					BD5FDED71A736A7C00EE6BF3 = {
-						CreatedOnToolsVersion = 6.2;
+					BDC8E43C1A759A9E0013C2BE = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
-					BD5FDEF01A736A7C00EE6BF3 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = BD5FDED71A736A7C00EE6BF3;
+					BDC8E4581A759A9E0013C2BE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = BDC8E43C1A759A9E0013C2BE;
 					};
 				};
 			};
-			buildConfigurationList = BD5FDED31A736A7C00EE6BF3 /* Build configuration list for PBXProject "RSS-Aggregator" */;
+			buildConfigurationList = BDC8E4381A759A9E0013C2BE /* Build configuration list for PBXProject "RSS-Aggregator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,29 +188,29 @@
 				en,
 				Base,
 			);
-			mainGroup = BD5FDECF1A736A7C00EE6BF3;
-			productRefGroup = BD5FDED91A736A7C00EE6BF3 /* Products */;
+			mainGroup = BDC8E4341A759A9E0013C2BE;
+			productRefGroup = BDC8E43E1A759A9E0013C2BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD5FDED71A736A7C00EE6BF3 /* RSS-Aggregator */,
-				BD5FDEF01A736A7C00EE6BF3 /* RSS-AggregatorTests */,
+				BDC8E43C1A759A9E0013C2BE /* RSS-Aggregator */,
+				BDC8E4581A759A9E0013C2BE /* RSS-AggregatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BD5FDED61A736A7C00EE6BF3 /* Resources */ = {
+		BDC8E43B1A759A9E0013C2BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5FDEE71A736A7C00EE6BF3 /* Main.storyboard in Resources */,
-				BD5FDEEC1A736A7C00EE6BF3 /* LaunchScreen.xib in Resources */,
-				BD5FDEE91A736A7C00EE6BF3 /* Images.xcassets in Resources */,
+				BDC8E44F1A759A9E0013C2BE /* Main.storyboard in Resources */,
+				BDC8E4541A759A9E0013C2BE /* LaunchScreen.xib in Resources */,
+				BDC8E4511A759A9E0013C2BE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD5FDEEF1A736A7C00EE6BF3 /* Resources */ = {
+		BDC8E4571A759A9E0013C2BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,46 +220,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BD5FDED41A736A7C00EE6BF3 /* Sources */ = {
+		BDC8E4391A759A9E0013C2BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5FDEE11A736A7C00EE6BF3 /* AppDelegate.m in Sources */,
-				BD5FDEDE1A736A7C00EE6BF3 /* main.m in Sources */,
+				BDC8E4461A759A9E0013C2BE /* AppDelegate.m in Sources */,
+				BDC8E4491A759A9E0013C2BE /* MasterViewController.m in Sources */,
+				BDC8E4431A759A9E0013C2BE /* main.m in Sources */,
+				BDC8E44C1A759A9E0013C2BE /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD5FDEED1A736A7C00EE6BF3 /* Sources */ = {
+		BDC8E4551A759A9E0013C2BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD5FDEF81A736A7C00EE6BF3 /* RSS_AggregatorTests.m in Sources */,
+				BDC8E4601A759A9E0013C2BE /* RSS_AggregatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD5FDEF31A736A7C00EE6BF3 /* PBXTargetDependency */ = {
+		BDC8E45B1A759A9E0013C2BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BD5FDED71A736A7C00EE6BF3 /* RSS-Aggregator */;
-			targetProxy = BD5FDEF21A736A7C00EE6BF3 /* PBXContainerItemProxy */;
+			target = BDC8E43C1A759A9E0013C2BE /* RSS-Aggregator */;
+			targetProxy = BDC8E45A1A759A9E0013C2BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BD5FDEE51A736A7C00EE6BF3 /* Main.storyboard */ = {
+		BDC8E44D1A759A9E0013C2BE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BD5FDEE61A736A7C00EE6BF3 /* Base */,
+				BDC8E44E1A759A9E0013C2BE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BD5FDEEA1A736A7C00EE6BF3 /* LaunchScreen.xib */ = {
+		BDC8E4521A759A9E0013C2BE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BD5FDEEB1A736A7C00EE6BF3 /* Base */,
+				BDC8E4531A759A9E0013C2BE /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -257,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BD5FDEF91A736A7C00EE6BF3 /* Debug */ = {
+		BDC8E4611A759A9E0013C2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -299,7 +311,7 @@
 			};
 			name = Debug;
 		};
-		BD5FDEFA1A736A7C00EE6BF3 /* Release */ = {
+		BDC8E4621A759A9E0013C2BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,7 +329,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -327,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,29 +347,27 @@
 			};
 			name = Release;
 		};
-		BD5FDEFC1A736A7C00EE6BF3 /* Debug */ = {
+		BDC8E4641A759A9E0013C2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RSS-Aggregator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		BD5FDEFD1A736A7C00EE6BF3 /* Release */ = {
+		BDC8E4651A759A9E0013C2BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RSS-Aggregator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		BD5FDEFF1A736A7C00EE6BF3 /* Debug */ = {
+		BDC8E4671A759A9E0013C2BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -376,7 +386,7 @@
 			};
 			name = Debug;
 		};
-		BD5FDF001A736A7C00EE6BF3 /* Release */ = {
+		BDC8E4681A759A9E0013C2BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -394,32 +404,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD5FDED31A736A7C00EE6BF3 /* Build configuration list for PBXProject "RSS-Aggregator" */ = {
+		BDC8E4381A759A9E0013C2BE /* Build configuration list for PBXProject "RSS-Aggregator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD5FDEF91A736A7C00EE6BF3 /* Debug */,
-				BD5FDEFA1A736A7C00EE6BF3 /* Release */,
+				BDC8E4611A759A9E0013C2BE /* Debug */,
+				BDC8E4621A759A9E0013C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD5FDEFB1A736A7C00EE6BF3 /* Build configuration list for PBXNativeTarget "RSS-Aggregator" */ = {
+		BDC8E4631A759A9E0013C2BE /* Build configuration list for PBXNativeTarget "RSS-Aggregator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD5FDEFC1A736A7C00EE6BF3 /* Debug */,
-				BD5FDEFD1A736A7C00EE6BF3 /* Release */,
+				BDC8E4641A759A9E0013C2BE /* Debug */,
+				BDC8E4651A759A9E0013C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		BD5FDEFE1A736A7C00EE6BF3 /* Build configuration list for PBXNativeTarget "RSS-AggregatorTests" */ = {
+		BDC8E4661A759A9E0013C2BE /* Build configuration list for PBXNativeTarget "RSS-AggregatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD5FDEFF1A736A7C00EE6BF3 /* Debug */,
-				BD5FDF001A736A7C00EE6BF3 /* Release */,
+				BDC8E4671A759A9E0013C2BE /* Debug */,
+				BDC8E4681A759A9E0013C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BD5FDED01A736A7C00EE6BF3 /* Project object */;
+	rootObject = BDC8E4351A759A9E0013C2BE /* Project object */;
 }
