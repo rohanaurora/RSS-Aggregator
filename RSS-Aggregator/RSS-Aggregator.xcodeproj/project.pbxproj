@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2013A81A775FF900FBE6C8 /* BWDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2013A71A775FF900FBE6C8 /* BWDB.m */; };
 		BDC8E4431A759A9E0013C2BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E4421A759A9E0013C2BE /* main.m */; };
 		BDC8E4461A759A9E0013C2BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E4451A759A9E0013C2BE /* AppDelegate.m */; };
 		BDC8E4491A759A9E0013C2BE /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC8E4481A759A9E0013C2BE /* MasterViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD2013A61A775FF900FBE6C8 /* BWDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWDB.h; sourceTree = "<group>"; };
+		BD2013A71A775FF900FBE6C8 /* BWDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWDB.m; sourceTree = "<group>"; };
 		BDC8E43D1A759A9E0013C2BE /* RSS-Aggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS-Aggregator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC8E4411A759A9E0013C2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDC8E4421A759A9E0013C2BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		BDC8E43F1A759A9E0013C2BE /* RSS-Aggregator */ = {
 			isa = PBXGroup;
 			children = (
+				BD2013A61A775FF900FBE6C8 /* BWDB.h */,
+				BD2013A71A775FF900FBE6C8 /* BWDB.m */,
 				BDC8E4441A759A9E0013C2BE /* AppDelegate.h */,
 				BDC8E4451A759A9E0013C2BE /* AppDelegate.m */,
 				BDC8E4471A759A9E0013C2BE /* MasterViewController.h */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2013A81A775FF900FBE6C8 /* BWDB.m in Sources */,
 				BDC8E4461A759A9E0013C2BE /* AppDelegate.m in Sources */,
 				BDC8E4491A759A9E0013C2BE /* MasterViewController.m in Sources */,
 				BDC8E4431A759A9E0013C2BE /* main.m in Sources */,
@@ -420,6 +426,7 @@
 				BDC8E4651A759A9E0013C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDC8E4661A759A9E0013C2BE /* Build configuration list for PBXNativeTarget "RSS-AggregatorTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				BDC8E4681A759A9E0013C2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
