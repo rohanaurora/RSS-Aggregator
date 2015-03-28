@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		BD5D7A321ACF84DD0077A106 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A311ACF84DD0077A106 /* main.m */; };
 		BD5D7A351ACF84DD0077A106 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A341ACF84DD0077A106 /* AppDelegate.m */; };
-		BD5D7A381ACF84DD0077A106 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A371ACF84DD0077A106 /* MasterViewController.m */; };
-		BD5D7A3B1ACF84DD0077A106 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A3A1ACF84DD0077A106 /* DetailViewController.m */; };
+		BD5D7A381ACF84DD0077A106 /* RSSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */; };
+		BD5D7A3B1ACF84DD0077A106 /* RSSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A3A1ACF84DD0077A106 /* RSSDetailViewController.m */; };
 		BD5D7A3E1ACF84DD0077A106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A3C1ACF84DD0077A106 /* Main.storyboard */; };
 		BD5D7A401ACF84DD0077A106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A3F1ACF84DD0077A106 /* Images.xcassets */; };
 		BD5D7A431ACF84DD0077A106 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A411ACF84DD0077A106 /* LaunchScreen.xib */; };
 		BD5D7A4F1ACF84DD0077A106 /* RSS_CatalogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A4E1ACF84DD0077A106 /* RSS_CatalogTests.m */; };
+		BD5D7A591ACF86F20077A106 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5D7A581ACF86F20077A106 /* libsqlite3.dylib */; };
+		BD5D7A5C1ACF872A0077A106 /* BWDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A5B1ACF872A0077A106 /* BWDB.m */; };
+		BD5D7A5F1ACF87390077A106 /* BWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A5E1ACF87390077A106 /* BWUtilities.m */; };
+		BD5D7A661ACF8C3A0077A106 /* RSSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A651ACF8C3A0077A106 /* RSSDB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +37,23 @@
 		BD5D7A311ACF84DD0077A106 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD5D7A331ACF84DD0077A106 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD5D7A341ACF84DD0077A106 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BD5D7A361ACF84DD0077A106 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		BD5D7A371ACF84DD0077A106 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		BD5D7A391ACF84DD0077A106 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		BD5D7A3A1ACF84DD0077A106 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BD5D7A361ACF84DD0077A106 /* RSSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSMasterViewController.h; sourceTree = "<group>"; };
+		BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSMasterViewController.m; sourceTree = "<group>"; };
+		BD5D7A391ACF84DD0077A106 /* RSSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDetailViewController.h; sourceTree = "<group>"; };
+		BD5D7A3A1ACF84DD0077A106 /* RSSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDetailViewController.m; sourceTree = "<group>"; };
 		BD5D7A3D1ACF84DD0077A106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD5D7A3F1ACF84DD0077A106 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BD5D7A421ACF84DD0077A106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BD5D7A481ACF84DD0077A106 /* RSS-CatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSS-CatalogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5D7A4D1ACF84DD0077A106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD5D7A4E1ACF84DD0077A106 /* RSS_CatalogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_CatalogTests.m; sourceTree = "<group>"; };
+		BD5D7A581ACF86F20077A106 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BD5D7A5A1ACF872A0077A106 /* BWDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWDB.h; sourceTree = "<group>"; };
+		BD5D7A5B1ACF872A0077A106 /* BWDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWDB.m; sourceTree = "<group>"; };
+		BD5D7A5D1ACF87390077A106 /* BWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWUtilities.h; sourceTree = "<group>"; };
+		BD5D7A5E1ACF87390077A106 /* BWUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWUtilities.m; sourceTree = "<group>"; };
+		BD5D7A641ACF8C3A0077A106 /* RSSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDB.h; sourceTree = "<group>"; };
+		BD5D7A651ACF8C3A0077A106 /* RSSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5D7A591ACF86F20077A106 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,7 @@
 		BD5D7A231ACF84DD0077A106 = {
 			isa = PBXGroup;
 			children = (
+				BD5D7A581ACF86F20077A106 /* libsqlite3.dylib */,
 				BD5D7A2E1ACF84DD0077A106 /* RSS-Catalog */,
 				BD5D7A4B1ACF84DD0077A106 /* RSS-CatalogTests */,
 				BD5D7A2D1ACF84DD0077A106 /* Products */,
@@ -84,15 +97,10 @@
 		BD5D7A2E1ACF84DD0077A106 /* RSS-Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				BD5D7A331ACF84DD0077A106 /* AppDelegate.h */,
-				BD5D7A341ACF84DD0077A106 /* AppDelegate.m */,
-				BD5D7A361ACF84DD0077A106 /* MasterViewController.h */,
-				BD5D7A371ACF84DD0077A106 /* MasterViewController.m */,
-				BD5D7A391ACF84DD0077A106 /* DetailViewController.h */,
-				BD5D7A3A1ACF84DD0077A106 /* DetailViewController.m */,
-				BD5D7A3C1ACF84DD0077A106 /* Main.storyboard */,
-				BD5D7A3F1ACF84DD0077A106 /* Images.xcassets */,
-				BD5D7A411ACF84DD0077A106 /* LaunchScreen.xib */,
+				BD5D7A621ACF87670077A106 /* Classes */,
+				BD5D7A601ACF873E0077A106 /* BW Utilities */,
+				BD5D7A611ACF87500077A106 /* BW DB */,
+				BD5D7A631ACF877B0077A106 /* Resources */,
 				BD5D7A2F1ACF84DD0077A106 /* Supporting Files */,
 			);
 			path = "RSS-Catalog";
@@ -122,6 +130,49 @@
 				BD5D7A4D1ACF84DD0077A106 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD5D7A601ACF873E0077A106 /* BW Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD5D7A5D1ACF87390077A106 /* BWUtilities.h */,
+				BD5D7A5E1ACF87390077A106 /* BWUtilities.m */,
+			);
+			name = "BW Utilities";
+			sourceTree = "<group>";
+		};
+		BD5D7A611ACF87500077A106 /* BW DB */ = {
+			isa = PBXGroup;
+			children = (
+				BD5D7A641ACF8C3A0077A106 /* RSSDB.h */,
+				BD5D7A651ACF8C3A0077A106 /* RSSDB.m */,
+				BD5D7A5A1ACF872A0077A106 /* BWDB.h */,
+				BD5D7A5B1ACF872A0077A106 /* BWDB.m */,
+			);
+			name = "BW DB";
+			sourceTree = "<group>";
+		};
+		BD5D7A621ACF87670077A106 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD5D7A331ACF84DD0077A106 /* AppDelegate.h */,
+				BD5D7A341ACF84DD0077A106 /* AppDelegate.m */,
+				BD5D7A361ACF84DD0077A106 /* RSSMasterViewController.h */,
+				BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */,
+				BD5D7A391ACF84DD0077A106 /* RSSDetailViewController.h */,
+				BD5D7A3A1ACF84DD0077A106 /* RSSDetailViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BD5D7A631ACF877B0077A106 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD5D7A3C1ACF84DD0077A106 /* Main.storyboard */,
+				BD5D7A3F1ACF84DD0077A106 /* Images.xcassets */,
+				BD5D7A411ACF84DD0077A106 /* LaunchScreen.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5D7A5C1ACF872A0077A106 /* BWDB.m in Sources */,
 				BD5D7A351ACF84DD0077A106 /* AppDelegate.m in Sources */,
-				BD5D7A381ACF84DD0077A106 /* MasterViewController.m in Sources */,
+				BD5D7A661ACF8C3A0077A106 /* RSSDB.m in Sources */,
+				BD5D7A381ACF84DD0077A106 /* RSSMasterViewController.m in Sources */,
 				BD5D7A321ACF84DD0077A106 /* main.m in Sources */,
-				BD5D7A3B1ACF84DD0077A106 /* DetailViewController.m in Sources */,
+				BD5D7A3B1ACF84DD0077A106 /* RSSDetailViewController.m in Sources */,
+				BD5D7A5F1ACF87390077A106 /* BWUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +474,7 @@
 				BD5D7A541ACF84DD0077A106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD5D7A551ACF84DD0077A106 /* Build configuration list for PBXNativeTarget "RSS-CatalogTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +483,7 @@
 				BD5D7A571ACF84DD0077A106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

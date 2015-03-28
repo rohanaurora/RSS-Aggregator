@@ -1,18 +1,18 @@
 //
-//  DetailViewController.m
+//  RSSDetailViewController.m
 //  RSS-Catalog
 //
 //  Created by Rohan Aurora on 4/3/15.
 //  Copyright (c) 2015 Rohan Aurora. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "RSSDetailViewController.h"
 
-@interface DetailViewController ()
+@interface RSSDetailViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation RSSDetailViewController
 
 #pragma mark - Managing the detail item
 

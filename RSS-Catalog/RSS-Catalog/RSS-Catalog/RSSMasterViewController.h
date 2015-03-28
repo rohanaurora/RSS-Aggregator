@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class DetailViewController;
+@class RSSDetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface RSSMasterViewController : UITableViewController
 
-@property (strong, nonatomic) DetailViewController *detailViewController;
+@property (strong, nonatomic) RSSDetailViewController *detailViewController;
 
 
 @end
