@@ -19,6 +19,7 @@
 		BD5D7A5C1ACF872A0077A106 /* BWDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A5B1ACF872A0077A106 /* BWDB.m */; };
 		BD5D7A5F1ACF87390077A106 /* BWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A5E1ACF87390077A106 /* BWUtilities.m */; };
 		BD5D7A661ACF8C3A0077A106 /* RSSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A651ACF8C3A0077A106 /* RSSDB.m */; };
+		BD5D7A681ACF90430077A106 /* bwrss.db in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A671ACF90430077A106 /* bwrss.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BD5D7A5E1ACF87390077A106 /* BWUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWUtilities.m; sourceTree = "<group>"; };
 		BD5D7A641ACF8C3A0077A106 /* RSSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDB.h; sourceTree = "<group>"; };
 		BD5D7A651ACF8C3A0077A106 /* RSSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDB.m; sourceTree = "<group>"; };
+		BD5D7A671ACF90430077A106 /* bwrss.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bwrss.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		BD5D7A231ACF84DD0077A106 = {
 			isa = PBXGroup;
 			children = (
+				BD5D7A671ACF90430077A106 /* bwrss.db */,
 				BD5D7A581ACF86F20077A106 /* libsqlite3.dylib */,
 				BD5D7A2E1ACF84DD0077A106 /* RSS-Catalog */,
 				BD5D7A4B1ACF84DD0077A106 /* RSS-CatalogTests */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD5D7A3E1ACF84DD0077A106 /* Main.storyboard in Resources */,
+				BD5D7A681ACF90430077A106 /* bwrss.db in Resources */,
 				BD5D7A431ACF84DD0077A106 /* LaunchScreen.xib in Resources */,
 				BD5D7A401ACF84DD0077A106 /* Images.xcassets in Resources */,
 			);
