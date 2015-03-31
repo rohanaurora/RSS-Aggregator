@@ -26,7 +26,7 @@ class BWRSSSafariActivity: UIActivity {
 
     override func canPerformWithActivityItems(activityItems: [AnyObject]) -> Bool {
         for item in activityItems {
-            if item.isKindOfClass(NSURL) && UIApplication.sharedApplication().canOpenURL(item as NSURL) {
+            if item.isKindOfClass(NSURL) && UIApplication.sharedApplication().canOpenURL(item as! NSURL) {
                 return true
             }
         }
@@ -36,7 +36,7 @@ class BWRSSSafariActivity: UIActivity {
     override func prepareWithActivityItems(activityItems: [AnyObject]) {
         for item in activityItems {
             if item.isKindOfClass(NSURL) {
-                _url = (item as NSURL)
+                _url = (item as! NSURL)
             }
         }
     }
