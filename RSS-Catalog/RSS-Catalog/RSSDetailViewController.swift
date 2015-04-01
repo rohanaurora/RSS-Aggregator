@@ -240,7 +240,7 @@ import WebKit
     
     // MARK: WKNavigationDelegate
     
-    func webView(webView: WKWebView!, didCommitNavigation navigation: WKNavigation!) {
+    func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         if let pb = progress? {
             pb.setProgress(0.0, animated: false)
