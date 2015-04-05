@@ -256,7 +256,7 @@ import WebKit
         setBackFwdEnabled(webView)
     }
     
-    func webView(webView: WKWebView!, didFinishNavigation navigation: WKNavigation!) {
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         updateReloadStopButton(reloadButton!)
         if let pb = progress? {
