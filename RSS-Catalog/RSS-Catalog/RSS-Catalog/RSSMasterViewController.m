@@ -7,7 +7,8 @@
 //
 
 #import "RSSMasterViewController.h"
-#import "RSSDetailViewController.h"
+#import "RSSAddViewController.h"
+#import "RSSItemsViewController.h"
 
 @interface RSSMasterViewController () {
     RSSDB * _rssDB;
@@ -32,14 +33,20 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) self.isPad = YES;
+
+    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        self.isPad = YES;
+    }
+
     [self loadFeedIDs];
     [self.tableView reloadData];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
-    if (self.newsFeed) [self loadNewFeed];
+    if (self.newsFeed) {
+        [self loadNewFeed];
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations
@@ -48,28 +55,22 @@
     return UIInterfaceOrientationMaskAll;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - Segue delegate
 
-//- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"ToItemTableView"]) {
-//        BWRSSItemsTableViewController * itemsTableViewController = [segue destinationViewController];
-//        NSIndexPath * path = [self.tableView indexPathForSelectedRow];
-//        NSNumber * feedID = _feedIDs[path.row];
-//        
-//        // setup some context
-//        itemsTableViewController.currentFeedID = feedID;
-//        itemsTableViewController.rssDB = _rssDB;
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"feedDetails"]) {
+        RSSItemsViewController * itemsTableViewController = [segue destinationViewController];
+        NSIndexPath * path = [self.tableView indexPathForSelectedRow];
+        NSNumber * feedID = _feedIDs[path.row];
+        
+        // setup some context
+        itemsTableViewController.currentFeedID = feedID;
+        itemsTableViewController.rssDB = _rssDB;
 //    } else if([segue.identifier isEqualToString:@"ToAddView"]) {
-//        BWRSSAddViewController *rssAddViewController = [segue destinationViewController];
+//        RSSAddViewController *rssAddViewController = [segue destinationViewController];
 //        rssAddViewController.delegate = self;
-//    }
-//}
+    }
+}
 
 #pragma mark - RSSAddViewControllerDelegate delegate methods
 

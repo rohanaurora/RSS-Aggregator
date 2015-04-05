@@ -10,7 +10,6 @@
 		BD5D7A321ACF84DD0077A106 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A311ACF84DD0077A106 /* main.m */; };
 		BD5D7A351ACF84DD0077A106 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A341ACF84DD0077A106 /* AppDelegate.m */; };
 		BD5D7A381ACF84DD0077A106 /* RSSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */; };
-		BD5D7A3B1ACF84DD0077A106 /* RSSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A3A1ACF84DD0077A106 /* RSSDetailViewController.m */; };
 		BD5D7A3E1ACF84DD0077A106 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A3C1ACF84DD0077A106 /* Main.storyboard */; };
 		BD5D7A401ACF84DD0077A106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A3F1ACF84DD0077A106 /* Images.xcassets */; };
 		BD5D7A431ACF84DD0077A106 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A411ACF84DD0077A106 /* LaunchScreen.xib */; };
@@ -20,6 +19,14 @@
 		BD5D7A5F1ACF87390077A106 /* BWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A5E1ACF87390077A106 /* BWUtilities.m */; };
 		BD5D7A661ACF8C3A0077A106 /* RSSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A651ACF8C3A0077A106 /* RSSDB.m */; };
 		BD5D7A681ACF90430077A106 /* bwrss.db in Resources */ = {isa = PBXBuildFile; fileRef = BD5D7A671ACF90430077A106 /* bwrss.db */; };
+		BD5D7A6B1AD0C9250077A106 /* RSSAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A6A1AD0C9250077A106 /* RSSAddViewController.m */; };
+		BD5D7A6E1AD0D3DA0077A106 /* RSSItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A6D1AD0D3DA0077A106 /* RSSItemsViewController.m */; };
+		BD5D7A711AD0D6E00077A106 /* RSSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A701AD0D6E00077A106 /* RSSDetailViewController.swift */; };
+		BD5D7A731AD0D71F0077A106 /* NavigationViewControllerWithProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A721AD0D71F0077A106 /* NavigationViewControllerWithProgress.swift */; };
+		BD5D7A751AD0D7310077A106 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A741AD0D7310077A106 /* Extensions.swift */; };
+		BD5D7A781AD0D7870077A106 /* BWRSSChromeActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A761AD0D7870077A106 /* BWRSSChromeActivity.swift */; };
+		BD5D7A791AD0D7870077A106 /* BWRSSSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A771AD0D7870077A106 /* BWRSSSafariActivity.swift */; };
+		BD5D7A811AD0D8C80077A106 /* RSSSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5D7A801AD0D8C80077A106 /* RSSSplitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +47,6 @@
 		BD5D7A341ACF84DD0077A106 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BD5D7A361ACF84DD0077A106 /* RSSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSMasterViewController.h; sourceTree = "<group>"; };
 		BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSMasterViewController.m; sourceTree = "<group>"; };
-		BD5D7A391ACF84DD0077A106 /* RSSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDetailViewController.h; sourceTree = "<group>"; };
-		BD5D7A3A1ACF84DD0077A106 /* RSSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDetailViewController.m; sourceTree = "<group>"; };
 		BD5D7A3D1ACF84DD0077A106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD5D7A3F1ACF84DD0077A106 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BD5D7A421ACF84DD0077A106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +61,18 @@
 		BD5D7A641ACF8C3A0077A106 /* RSSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSDB.h; sourceTree = "<group>"; };
 		BD5D7A651ACF8C3A0077A106 /* RSSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSDB.m; sourceTree = "<group>"; };
 		BD5D7A671ACF90430077A106 /* bwrss.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bwrss.db; sourceTree = "<group>"; };
+		BD5D7A691AD0C9250077A106 /* RSSAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSAddViewController.h; sourceTree = "<group>"; };
+		BD5D7A6A1AD0C9250077A106 /* RSSAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSAddViewController.m; sourceTree = "<group>"; };
+		BD5D7A6C1AD0D3DA0077A106 /* RSSItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSItemsViewController.h; sourceTree = "<group>"; };
+		BD5D7A6D1AD0D3DA0077A106 /* RSSItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSItemsViewController.m; sourceTree = "<group>"; };
+		BD5D7A6F1AD0D6DF0077A106 /* RSS-Catalog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSS-Catalog-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		BD5D7A701AD0D6E00077A106 /* RSSDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSSDetailViewController.swift; path = ../RSSDetailViewController.swift; sourceTree = "<group>"; };
+		BD5D7A721AD0D71F0077A106 /* NavigationViewControllerWithProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerWithProgress.swift; sourceTree = "<group>"; };
+		BD5D7A741AD0D7310077A106 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BD5D7A761AD0D7870077A106 /* BWRSSChromeActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWRSSChromeActivity.swift; sourceTree = "<group>"; };
+		BD5D7A771AD0D7870077A106 /* BWRSSSafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWRSSSafariActivity.swift; sourceTree = "<group>"; };
+		BD5D7A7F1AD0D8C80077A106 /* RSSSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSSplitViewController.h; sourceTree = "<group>"; };
+		BD5D7A801AD0D8C80077A106 /* RSSSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSSplitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,12 +175,22 @@
 		BD5D7A621ACF87670077A106 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BD5D7A7F1AD0D8C80077A106 /* RSSSplitViewController.h */,
+				BD5D7A801AD0D8C80077A106 /* RSSSplitViewController.m */,
 				BD5D7A331ACF84DD0077A106 /* AppDelegate.h */,
 				BD5D7A341ACF84DD0077A106 /* AppDelegate.m */,
+				BD5D7A6F1AD0D6DF0077A106 /* RSS-Catalog-Bridging-Header.h */,
+				BD5D7A761AD0D7870077A106 /* BWRSSChromeActivity.swift */,
+				BD5D7A771AD0D7870077A106 /* BWRSSSafariActivity.swift */,
 				BD5D7A361ACF84DD0077A106 /* RSSMasterViewController.h */,
 				BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */,
-				BD5D7A391ACF84DD0077A106 /* RSSDetailViewController.h */,
-				BD5D7A3A1ACF84DD0077A106 /* RSSDetailViewController.m */,
+				BD5D7A701AD0D6E00077A106 /* RSSDetailViewController.swift */,
+				BD5D7A721AD0D71F0077A106 /* NavigationViewControllerWithProgress.swift */,
+				BD5D7A741AD0D7310077A106 /* Extensions.swift */,
+				BD5D7A691AD0C9250077A106 /* RSSAddViewController.h */,
+				BD5D7A6A1AD0C9250077A106 /* RSSAddViewController.m */,
+				BD5D7A6C1AD0D3DA0077A106 /* RSSItemsViewController.h */,
+				BD5D7A6D1AD0D3DA0077A106 /* RSSItemsViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -279,12 +306,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5D7A6E1AD0D3DA0077A106 /* RSSItemsViewController.m in Sources */,
+				BD5D7A791AD0D7870077A106 /* BWRSSSafariActivity.swift in Sources */,
+				BD5D7A711AD0D6E00077A106 /* RSSDetailViewController.swift in Sources */,
 				BD5D7A5C1ACF872A0077A106 /* BWDB.m in Sources */,
+				BD5D7A731AD0D71F0077A106 /* NavigationViewControllerWithProgress.swift in Sources */,
+				BD5D7A6B1AD0C9250077A106 /* RSSAddViewController.m in Sources */,
 				BD5D7A351ACF84DD0077A106 /* AppDelegate.m in Sources */,
 				BD5D7A661ACF8C3A0077A106 /* RSSDB.m in Sources */,
 				BD5D7A381ACF84DD0077A106 /* RSSMasterViewController.m in Sources */,
+				BD5D7A781AD0D7870077A106 /* BWRSSChromeActivity.swift in Sources */,
+				BD5D7A811AD0D8C80077A106 /* RSSSplitViewController.m in Sources */,
 				BD5D7A321ACF84DD0077A106 /* main.m in Sources */,
-				BD5D7A3B1ACF84DD0077A106 /* RSSDetailViewController.m in Sources */,
+				BD5D7A751AD0D7310077A106 /* Extensions.swift in Sources */,
 				BD5D7A5F1ACF87390077A106 /* BWUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +380,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -364,6 +399,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = RSS_Catalog;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +424,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -399,6 +436,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = RSS_Catalog;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -409,9 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "RSS-Catalog/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_MODULE_NAME = RSS_Catalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSS-Catalog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -419,9 +462,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "RSS-Catalog/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_MODULE_NAME = RSS_Catalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSS-Catalog-Bridging-Header.h";
 			};
 			name = Release;
 		};
