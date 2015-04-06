@@ -259,7 +259,7 @@ import WebKit
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         updateReloadStopButton(reloadButton!)
-        if let pb = progress? {
+        if let pb = progress {
             pb.setProgress(1.0, animated: true)
             pb.hidden = true
         }
