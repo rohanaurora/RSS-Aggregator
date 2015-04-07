@@ -272,7 +272,7 @@ import WebKit
     // MARK: WKUIDelegate
     
     // this handles target=_blank links by opening them in the current webView
-    func webView(webView: WKWebView!, createWebViewWithConfiguration configuration: WKWebViewConfiguration!, forNavigationAction navigationAction: WKNavigationAction!, windowFeatures: WKWindowFeatures!) -> WKWebView! {
+    func webView(webView: WKWebView, createWebViewWithConfiguration configuration: WKWebViewConfiguration, forNavigationAction navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if navigationAction.targetFrame == nil {
             webView.loadRequest(navigationAction.request)
             setWebViewTitle(webView)
@@ -288,7 +288,7 @@ import WebKit
             setWebViewTitle(wv)
         }
         if keyPath == "estimatedProgress" && object === self.webView {
-            if let pb = progress? {
+            if let pb = progress {
                 pb.setProgress(Float(self.webView!.estimatedProgress), animated: true)
             }
         } else {
