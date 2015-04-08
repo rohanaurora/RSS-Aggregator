@@ -41,7 +41,7 @@ import WebKit
     
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem? {
+        if let detail = self.detailItem {
             self.setupToolBar()
             self.setupNavSubtitleView()
             self.progress = (self.navigationController as NavigationViewControllerWithProgress).progress
