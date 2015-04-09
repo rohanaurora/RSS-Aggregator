@@ -44,7 +44,7 @@ import WebKit
         if let detail = self.detailItem {
             self.setupToolBar()
             self.setupNavSubtitleView()
-            self.progress = (self.navigationController as NavigationViewControllerWithProgress).progress
+            self.progress = (self.navigationController as! NavigationViewControllerWithProgress).progress
             self.title = detail
         }
     }
@@ -242,7 +242,7 @@ import WebKit
     
     func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        if let pb = progress? {
+        if let pb = progress {
             pb.setProgress(0.0, animated: false)
             pb.hidden = false
         }
