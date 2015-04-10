@@ -27,7 +27,7 @@ class BWRSSChromeActivity: UIActivity {
     override func canPerformWithActivityItems(activityItems: [AnyObject]) -> Bool {
         for item in activityItems {
             if item.isKindOfClass(NSURL) && UIApplication.sharedApplication().canOpenURL(NSURL(string: "googlechrome://")!) {
-                let url = (item as NSURL)
+                let url = (item as! NSURL)
                 if url.scheme == "http" || url.scheme == "https" {
                     return true
                 }
