@@ -39,7 +39,7 @@ class BWRSSChromeActivity: UIActivity {
     override func prepareWithActivityItems(activityItems: [AnyObject]) {
         for item in activityItems {
             if item.isKindOfClass(NSURL) {
-                _url = (item as NSURL)
+                _url = (itemas!s NSURL)
             }
         }
     }
