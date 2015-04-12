@@ -39,7 +39,7 @@ class BWRSSChromeActivity: UIActivity {
     override func prepareWithActivityItems(activityItems: [AnyObject]) {
         for item in activityItems {
             if item.isKindOfClass(NSURL) {
-                _url = (itemas!s NSURL)
+                _url = (item as NSURL)
             }
         }
     }
@@ -55,7 +55,7 @@ class BWRSSChromeActivity: UIActivity {
                 chromeabsurl = absurl.stringByReplacingCharactersInRange(NSRange(location: 0, length: 4), withString: "googlechrome")
             }
             
-            if let chromeurl = NSURL(string: chromeabsurl) {
+            if let chromeurl = NSURL(string: chromeabsurl as String) {
                 let completed = UIApplication.sharedApplication().openURL(chromeurl)
                 self.activityDidFinish(completed)
             }
