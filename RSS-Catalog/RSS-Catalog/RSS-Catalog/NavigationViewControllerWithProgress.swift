@@ -37,9 +37,9 @@ class NavigationViewControllerWithProgress: UINavigationController {
         self.navigationBar.tintColor = globalTint
         let items = self.navigationBar.items
         for i in items {
-            if let title = (i as UINavigationItem).title {
+            if let title = (i as! UINavigationItem).title {
                 if title == "Detail" {
-                    (i as UINavigationItem).title = nil
+                    (i as! UINavigationItem).title = nil
                 }
             }
         }
