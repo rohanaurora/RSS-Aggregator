@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
-//
 @end
 
 @implementation AppDelegate

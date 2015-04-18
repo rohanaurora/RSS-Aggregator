@@ -456,11 +456,10 @@ static NSString * const kDCDateElementName = @"dc:date";
 #pragma mark - Error handling
 
 - (void)handleError:(NSError *)error {
-    // NSLog(@"%s", __FUNCTION__);
-    // NSLog(@"error is %@, %@", error, [error domain]);
+
     NSString *errorMessage = [error localizedDescription];
+
     
-    // errors in NSXMLParserErrorDomain >= 10 are harmless parsing errors
     if ([error domain] == NSXMLParserErrorDomain && [error code] >= 10) {
         alertMessage(@"Cannot parse feed: %@", errorMessage);  // tell the user why parsing is stopped
     } else {
@@ -473,7 +472,6 @@ static NSString * const kDCDateElementName = @"dc:date";
 }
 
 - (void)errorAlert:(NSString *) message {
-    // NSLog(@"%s", __FUNCTION__);
     UIAlertView *alertView = [[UIAlertView alloc]
                               initWithTitle:@"RSS Error" message:message delegate:nil
                               cancelButtonTitle:@"OK" otherButtonTitles:nil];
