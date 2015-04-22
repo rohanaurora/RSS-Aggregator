@@ -175,15 +175,15 @@
 		BD5D7A621ACF87670077A106 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BD5D7A7F1AD0D8C80077A106 /* RSSSplitViewController.h */,
-				BD5D7A801AD0D8C80077A106 /* RSSSplitViewController.m */,
 				BD5D7A331ACF84DD0077A106 /* AppDelegate.h */,
 				BD5D7A341ACF84DD0077A106 /* AppDelegate.m */,
+				BD5D7A361ACF84DD0077A106 /* RSSMasterViewController.h */,
+				BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */,
+				BD5D7A7F1AD0D8C80077A106 /* RSSSplitViewController.h */,
+				BD5D7A801AD0D8C80077A106 /* RSSSplitViewController.m */,
 				BD5D7A6F1AD0D6DF0077A106 /* RSS-Catalog-Bridging-Header.h */,
 				BD5D7A761AD0D7870077A106 /* BWRSSChromeActivity.swift */,
 				BD5D7A771AD0D7870077A106 /* BWRSSSafariActivity.swift */,
-				BD5D7A361ACF84DD0077A106 /* RSSMasterViewController.h */,
-				BD5D7A371ACF84DD0077A106 /* RSSMasterViewController.m */,
 				BD5D7A701AD0D6E00077A106 /* RSSDetailViewController.swift */,
 				BD5D7A721AD0D71F0077A106 /* NavigationViewControllerWithProgress.swift */,
 				BD5D7A741AD0D7310077A106 /* Extensions.swift */,

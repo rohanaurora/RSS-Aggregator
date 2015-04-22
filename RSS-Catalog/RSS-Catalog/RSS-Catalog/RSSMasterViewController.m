@@ -10,13 +10,12 @@
 #import "RSSAddViewController.h"
 #import "RSSItemsViewController.h"
 
-@interface RSSMasterViewController () {
-    RSSDB * _rssDB;
-}
+@interface RSSMasterViewController ()
 
-@property (nonatomic, assign) BOOL isPad;
 @property (nonatomic, strong) NSArray *feedIDs;
 @property (nonatomic, strong) NSDictionary *newsFeed;
+@property (nonatomic, strong) RSSDB *rssDB;
+@property (nonatomic, assign) BOOL isPad;
 
 @end
 
@@ -26,18 +25,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.5 green:0.0 blue:0.0 alpha:0.8];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:67.0 / 255.0 green:104.0 / 255.0 blue:208.0 / 255.0 alpha:1.0f];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     self.title = @"RSS Catalog";
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
-    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-        self.isPad = YES;
-    }
-
+    
+    self.isPad = (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) ? YES:NO;
     [self loadFeedIDs];
     [self.tableView reloadData];
 }
@@ -61,11 +57,11 @@
     if ([segue.identifier isEqualToString:@"feedDetails"]) {
         RSSItemsViewController * itemsTableViewController = [segue destinationViewController];
         NSIndexPath * path = [self.tableView indexPathForSelectedRow];
-        NSNumber * feedID = _feedIDs[path.row];
+        NSNumber * feedID = self.feedIDs[path.row];
         
         // setup some context
         itemsTableViewController.currentFeedID = feedID;
-        itemsTableViewController.rssDB = _rssDB;
+        itemsTableViewController.rssDB = self.rssDB;
 //    } else if([segue.identifier isEqualToString:@"ToAddView"]) {
 //        RSSAddViewController *rssAddViewController = [segue destinationViewController];
 //        rssAddViewController.delegate = self;
@@ -100,22 +96,22 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     [self loadFeedIDs];     // this gets called on reloadData so we must get a new count every time
-    return [_feedIDs count];
+    return [self.feedIDs count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"RSSCell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
-    
+
     [self loadFeedIDsIfEmpty];
     
     // Configure the cell
-    NSDictionary * feedRow = [_rssDB getFeedRow:_feedIDs[indexPath.row]];
+    NSDictionary * feedRow = [self.rssDB getFeedRow:self.feedIDs[indexPath.row]];
     cell.textLabel.font = [UIFont boldSystemFontOfSize:[UIFont labelFontSize]];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:[UIFont smallSystemFontSize]];
     [cell.textLabel setText: feedRow[@"title"]];
@@ -129,14 +125,13 @@
 }
 
 // Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     [self loadFeedIDsIfEmpty];
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // must update the database before updating the tableView
         // so that the tableView never has a row that's missing from the database
-        [_rssDB deleteFeedRow:_feedIDs[indexPath.row]];
+        [self.rssDB deleteFeedRow:self.feedIDs[indexPath.row]];
         [self loadFeedIDs];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
@@ -162,7 +157,7 @@
 }
 
 - (NSIndexPath *) indexPathForDBRec:(NSDictionary *) dbRec {
-    NSNumber * rowID = [_rssDB valueFromQuery:@"SELECT id FROM feed WHERE url = ?", dbRec[@"url"]];
+    NSNumber * rowID = [self.rssDB valueFromQuery:@"SELECT id FROM feed WHERE url = ?", dbRec[@"url"]];
     if (rowID) {
         NSArray * tempFeedIDs = [_rssDB getFeedIDs];
         return [NSIndexPath indexPathForRow:[tempFeedIDs indexOfObject:rowID] inSection:0];
@@ -172,20 +167,29 @@
 }
 
 - (NSArray *) loadFeedIDs {
-    if (!_rssDB) [self loadFeedDB];
-    _feedIDs = [_rssDB getFeedIDs];
-    return _feedIDs;
+    if (!self.rssDB) {
+        [self loadFeedDB];
+    }
+    self.feedIDs = [self.rssDB getFeedIDs];
+    return self.feedIDs;
 }
 
 - (NSArray *) loadFeedIDsIfEmpty {
-    if (!_rssDB) [self loadFeedDB];
-    if (!_feedIDs || ![_feedIDs count]) _feedIDs = [_rssDB getFeedIDs];
-    return _feedIDs;
+    if (!self.rssDB) {
+        [self loadFeedDB];
+    }
+    
+    if (!self.feedIDs || ![self.feedIDs count]) {
+        self.feedIDs = [self.rssDB getFeedIDs];
+    }
+    return self.feedIDs;
 }
 
 - (RSSDB *) loadFeedDB {
-    if (!_rssDB) _rssDB = [[RSSDB alloc] initWithRSSDBFilename:@"bwrss.db"];
-    return _rssDB;
+    if (!self.rssDB) {
+        self.rssDB = [[RSSDB alloc] initWithRSSDBFilename:@"bwrss.db"];
+    }
+    return self.rssDB;
 }
 
 
